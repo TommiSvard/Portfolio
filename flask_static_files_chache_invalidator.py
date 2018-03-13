@@ -1,27 +1,12 @@
-from flask import Flask, request
+from flask import url_for
 import os
-app = Flask(__name__)
+from app import app
 
-@app.url_defaults
-def hashed_url_for_static_file(endpoint, values):
-    if 'static' == endpoint or endpoint.endswith('.static'):
-        filename = values.get('filename')
+def dated_url_for(endpoint, **values):
+    if endpoint == 'static':
+        filename = values.get('filename', None)
         if filename:
-            if '.' in endpoint:  # has higher priority
-                blueprint = endpoint.rsplit('.', 1)[0]
-            else:
-                blueprint = request.blueprint  # can be None too
-
-            if blueprint:
-                static_folder = app.blueprints[blueprint].static_folder
-            else:
-                static_folder = app.static_folder
-
-            param_name = 'h'
-            while param_name in values:
-                param_name = '_' + param_name
-            values[param_name] = static_file_hash(os.path.join(static_folder, filename))
-
-
-def static_file_hash(filename):
-    return int(os.stat(filename).st_mtime)  # or app.config['last_build_timestamp'] or md5(filename) or etc...
+            file_path = os.path.join(app.root_path,
+                                     endpoint, filename)
+            values['q'] = int(os.stat(file_path).st_mtime)
+    return url_for(endpoint, **values)
