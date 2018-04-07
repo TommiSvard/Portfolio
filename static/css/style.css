@@ -1,4 +1,96 @@
 h1 {
-	margin: 25% auto;
-    color: steelblue;
+    color: lightblue;
+    text-align: center;
+}
+
+.lead {
+    text-align: center;
+    color:whitesmoke;
+
+}
+
+.jumbotron {
+    background-color: steelblue;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(167, 211, 227), rgba(0, 0, 0, 0));
+}
+
+.social-media {
+    font-size: 32px;
+    margin-left: 15%;
+}
+
+a {
+    color: whitesmoke;
+}
+.buttons {
+    text-align: center;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+
+    color: white;
+    padding: 25%;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    font-size: 16px;
+
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+
+.button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #c010e7;
+}
+
+.button3 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+
+/*Style for smaller screens*/
+
+@media (max-width: 800px) {
+    .button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 25%;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    font-size: 16px;
+    fill: 100%;
+    border: none;
+
+}
+  .button1 {
+    background-color: #4CAF50;
+    color: white;
+
+}
+.button2 {
+    background-color: #c010e7;
+    color: white;
+
+}
+.button3 {
+    background-color: #555555;
+    color: white;
+
+}
 }

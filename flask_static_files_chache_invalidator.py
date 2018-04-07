@@ -1,7 +1,7 @@
 from flask import url_for
 import os
 from app import app
-
+"""function for creating dynamic endpoints for cssfiles. Resolves potential cacheing problems flask may bring you."""
 def dated_url_for(endpoint, **values):
     if endpoint == 'static':
         filename = values.get('filename', None)
