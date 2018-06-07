@@ -10,7 +10,10 @@ h1 {
 }
 
 .jumbotron {
-    background-color: steelblue;
+    background-color: black;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
 }
 
 hr {
@@ -27,70 +30,21 @@ hr {
 a {
     color: whitesmoke;
 }
-.buttons {
-    text-align: center;
-}
-.button {
-    background-color: #4CAF50; /* Green */
 
-    color: white;
-    padding: 25%;
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
-    font-size: 16px;
-
-    cursor: pointer;
-    border-radius: 8px;
+#currentlylistening {
+    font-size: 12px;
+    color: whitesmoke;
+    margin-left: 66%;
+    border: solid red 2px;
+    border-width: thin;
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px;
+    background-color: red;
 }
 
-.button1 {
-    background-color: white;
-    color: black;
-    border: 2px solid #4CAF50;
+#lastfm {
+    font-size: 24px;
+    color: whitesmoke;
+    margin-left: 66%;
 }
 
-.button2 {
-    background-color: white;
-    color: black;
-    border: 2px solid #c010e7;
-}
-
-.button3 {
-    background-color: white;
-    color: black;
-    border: 2px solid #555555;
-}
-
-
-/*Style for smaller screens*/
-
-@media (max-width: 800px) {
-    .button {
-    background-color: #4CAF50; /* Green */
-    color: white;
-    padding: 25%;
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
-    font-size: 16px;
-    fill: 100%;
-    border: none;
-
-}
-  .button1 {
-    background-color: #4CAF50;
-    color: white;
-
-}
-.button2 {
-    background-color: #c010e7;
-    color: white;
-
-}
-.button3 {
-    background-color: #555555;
-    color: white;
-
-}
-}
