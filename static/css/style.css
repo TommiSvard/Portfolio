@@ -1,50 +1,62 @@
+header {
+    height:370px;
+    background: lightcoral;
+    width: 85%;
+    float: right;
+
+}
+
 h1 {
-    color: lightblue;
-    text-align: center;
+   text-align: center;
+   font-size: 72px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    clear: both;
+}
+
+span {
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    border: white solid 10px;
+    margin-top: 75px;
 }
 
 .lead {
+    font-size: 14px;
     text-align: center;
-    color:whitesmoke;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: white;
 
 }
 
-.jumbotron {
-    background-color: black;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-       -moz-box-shadow: 0 10px 6px -6px #777;
-            box-shadow: 0 10px 6px -6px #777;
+nav {
+    margin-top: 300px;
+    width: 15%;
+    z-index: 1;
+    max-height: 100%;
+    background: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
-
-hr {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(167, 211, 227), rgba(0, 0, 0, 0));
-}
-
-.social-media {
-    font-size: 32px;
-    margin-left: 15%;
-}
-
 a {
-    color: whitesmoke;
+    margin-top: 70px;
+    color: lightcoral;
 }
 
-#currentlylistening {
-    font-size: 12px;
-    color: whitesmoke;
-    margin-left: 66%;
-    border: solid red 2px;
-    border-width: thin;
-    border-radius: 5px 5px 5px 5px;
-    padding: 10px;
-    background-color: red;
+a:hover {
+    color: coral;
 }
 
-#lastfm {
-    font-size: 24px;
-    color: whitesmoke;
-    margin-left: 66%;
+.foot {
+    background-color: lightcoral;
 }
+.foot nav {
+    background-color: lightcoral;
 
+}.foot nav a {
+    color: white;
+ }

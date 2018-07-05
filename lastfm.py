@@ -1,5 +1,4 @@
 import pylast
-from pylast import *
 from key import *
 
 API_KEY = apiKey
@@ -15,8 +14,8 @@ user = network.get_user(uname)
 playCount = network.get_user(uname).get_playcount()
 
 #Let's user see if i've listened to a artist.
-#If i have it will return the latest song i listened to with that artist.
-#And the date i listenet to the song.
+#If i have, it will return the latest song i listened to with that artist.
+#And the date i listened to the song.
 #Else return "I haven't listened to that artist".
 def listenedArtists(name):
     getArtistTracks = network.get_user(uname).get_artist_tracks(name)
@@ -39,5 +38,12 @@ def latestLoved():
     lovedTracks = network.get_user(uname).get_loved_tracks()
     return lovedTracks[0][0]
 
-
+def albumCover():
+    try:
+        art = network.get_user(uname).get_now_playing().get_artist()
+        alb = network.get_user(uname).get_now_playing().get_album().get_title()
+        artistAlbumCover = network.get_album(title=alb, artist=art).get_cover_image()
+        return artistAlbumCover
+    except Exception as e:
+        return "?"
 
