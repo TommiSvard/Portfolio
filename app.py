@@ -8,6 +8,7 @@ app._static_folder = 'C:\\Users\\Tommi\\Desktop\\Projekt\\Portfolio\\static'
 
 @app.route('/')
 def index():
+
     return render_template('index.html')
 
 @app.route('/music')
