@@ -55,7 +55,7 @@ nav {
     display: inline-block;
     margin-top: 75px;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(34, 34, 34, 0.8);
 
 
 }
@@ -73,7 +73,7 @@ nav a {
 
 nav a:hover {
     text-decoration: none;
-    color: #e7d438;
+    color: #fcff0c;
 
 
 }
@@ -128,7 +128,7 @@ nav a:hover {
 }
 .foot nav {
     width: 100%;
-    background-color: #FEF596;
+    background-color: #fcff0c;
 
 }.foot nav a {
     display: inline-block;
@@ -136,3 +136,13 @@ nav a:hover {
     color: #E7450D;
 
  }
+
+.left-progress {
+    float:left;
+    margin-left: 20%;
+}
+
+.right-progress {
+    float:right;
+    margin-right: 20%;
+}
