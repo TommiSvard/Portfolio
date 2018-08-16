@@ -56,8 +56,6 @@ nav {
     margin-top: 75px;
     overflow: hidden;
     background-color: rgba(34, 34, 34, 0.8);
-
-
 }
 
 nav a {
@@ -68,14 +66,22 @@ nav a {
     font-size: 16px;
     text-transform: uppercase;
     padding: 4px 10px 0 5px;
+}
+
+@media screen and (max-width: 400px) {
+  nav {
+      display: none;
+  }
+
+  nav a {
+      display: none;
+  }
 
 }
 
 nav a:hover {
     text-decoration: none;
     color: #fcff0c;
-
-
 }
 
 .hvr-float-shadow {
@@ -108,19 +114,17 @@ nav a:hover {
   -webkit-transition-property: transform, opacity;
   transition-property: transform, opacity;
 }
-.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+.hvr-float-shadow:hover,  .hvr-float-shadow:active {
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
   /* move the element up by 5px */
 }
-.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+.hvr-float-shadow:hover:before,  .hvr-float-shadow:active:before {
   opacity: 1;
   -webkit-transform: translateY(5px);
   transform: translateY(5px);
   /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
-
-
 
 .foot {
     background-color: #FBDE03;
@@ -134,15 +138,113 @@ nav a:hover {
     display: inline-block;
     font-size: 10px;
     color: #E7450D;
-
  }
 
+#kunskap {
+text-align: center;
+    padding-top: 10%;
+
+}
+
+#progressbar1 {
+    width: 400px;
+}
+
+#progressbar2 {
+    width: 400px;
+}
+
+#progressbar3 {
+    width: 400px;
+}
+
+#progressbar4 {
+
+    width: 400px;
+}
+
+@media screen and (max-width: 860px) {
+  #progressbar1 {
+    width: 200px;
+}
+
+#progressbar2 {
+    width: 200px;
+}
+
+#progressbar3 {
+    width: 200px;
+}
+
+#progressbar4 {
+    width: 200px;
+    }
+
 .left-progress {
-    float:left;
-    margin-left: 20%;
+    float: none !important;;
+    margin-left: 24%;
 }
 
 .right-progress {
-    float:right;
-    margin-right: 20%;
+    float: none !important;
+    margin-left: 24%;
+    }
+}
+
+.left-progress {
+padding-top: 5%;
+padding-bottom: 15%;
+float: right;
+}
+
+.right-progress {
+    padding-top: 5%;
+    padding-bottom: 15%;
+    float: left;
+}
+
+#portfolio {
+    text-align: center;
+    padding: 3% 0 5% 0;
+}
+
+.alt-section {
+    background: rgba(252,255,12, 0.1)
+}
+
+.thumbnails-portfolio {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    overflow: auto;
+}
+
+.thumbnail-unit {
+    display: block;
+    width: 25%;
+    background: #b0adac;
+    float: left;
+    position: relative;
+    padding-top: 20%;
+    border: 1px solid black;
+
+}
+
+@media screen and (max-width: 760px){
+   .thumbnail-unit{
+        width: 50%;
+        padding-top: 30%;
+    }
+}
+
+.thumbnail-overlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+
+strong {
+    text-align: center;
+
 }
