@@ -1,6 +1,6 @@
 .container-fluid{
-    padding-left: 0rem !important;
-    padding-right: 0rem !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
     overflow: hidden !important;
 }
 
@@ -10,6 +10,39 @@ header {
     background: url("../img/header2.jpg") center center;
     background-size: cover;
     background-repeat: no-repeat
+}
+
+label {
+    color: white;
+    font-size: 26px;
+    margin: 0 0 0 5%;
+    border: 1px solid black;
+    padding: 3px;
+    background-color: black;
+    position: fixed;
+    display: none;
+    z-index: 1;
+}
+
+@media screen and (max-width: 549px) {
+  label {
+    display: block;
+      cursor: pointer;
+  }
+
+ label:hover{
+     color: #fcff0c;
+ }
+
+ #toggle:checked + .mobile-menu{
+     color: blue;
+ }
+}
+
+
+
+#toggle {
+    display:none;
 }
 
 h1 {
@@ -68,7 +101,7 @@ nav a {
     padding: 4px 10px 0 5px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 550px) {
   nav {
       display: none;
   }
