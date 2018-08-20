@@ -35,7 +35,7 @@ label {
  }
 
  #toggle:checked + .mobile-menu{
-     color: blue;
+     color: #ff0500;
  }
 }
 
@@ -176,74 +176,44 @@ nav a:hover {
 #kunskap {
 text-align: center;
     padding-top: 10%;
+    padding-bottom: 5%;
 
 }
 
-#progressbar1 {
-    width: 400px;
+.left-progress {
+    max-width: 480px;
+    margin: 0 auto;
+    overflow: auto;
+    position: relative;
+
 }
 
-#progressbar2 {
-    width: 400px;
-}
+.right-progress {
+   max-width: 480px;
+   margin: 0 auto;
+   overflow: auto;
+   position: relative;
+    padding-bottom: 10%;
 
-#progressbar3 {
-    width: 400px;
-}
-
-#progressbar4 {
-
-    width: 400px;
 }
 
 @media screen and (max-width: 860px) {
-  #progressbar1 {
-    width: 200px;
-}
-
-#progressbar2 {
-    width: 200px;
-}
-
-#progressbar3 {
-    width: 200px;
-}
-
-#progressbar4 {
-    width: 200px;
-    }
 
 .left-progress {
-    float: none !important;;
-    margin-left: 24%;
+    width: 75%;
 }
 
 .right-progress {
-    float: none !important;
-    margin-left: 24%;
+    width: 75%;
     }
 }
 
-.left-progress {
-padding-top: 5%;
-padding-bottom: 15%;
-float: right;
-}
-
-.right-progress {
-    padding-top: 5%;
-    padding-bottom: 15%;
-    float: left;
-}
 
 #portfolio {
     text-align: center;
     padding: 3% 0 5% 0;
 }
 
-.alt-section {
-    background: rgba(252,255,12, 0.1)
-}
 
 .thumbnails-portfolio {
     max-width: 960px;
@@ -255,13 +225,18 @@ float: right;
 .thumbnail-unit {
     display: block;
     width: 25%;
-    background: #b0adac;
     float: left;
     position: relative;
     padding-top: 20%;
-    border: 1px solid black;
+    overflow: hidden;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
+
+
 
 @media screen and (max-width: 760px){
    .thumbnail-unit{

@@ -91,7 +91,6 @@
 
 })(jQuery);
 
-console.log("lol mang")
 
 $('#progressbar1').LineProgressbar({
 	percentage: 85,

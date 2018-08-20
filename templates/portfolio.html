@@ -3,7 +3,7 @@
     <h3 id="portfolio">Portfolio</h3>
 <div class="thumbnails-portfolio">
 {% for item,val in skills.items() %}
-    <a href="{{ val }}" class="thumbnail-unit">
+    <a href="{{ val }}" class="thumbnail-unit" style="background-image: url(../static/img/thumbnails/{{ item }}.jpg);">
         <div class="thumbnail-overlay">
             <strong>{{ item }}</strong>
             <div class="thumb-icon"></div>
