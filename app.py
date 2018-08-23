@@ -13,9 +13,8 @@ def index():
         'Image-Gallery': 'url2',
         'Purrrfect-Match': 'url3',
         'RGB-Game': 'url4',
-        'ToDoList': 'url5',
-        'job6': 'url6',
-        'job7': 'url7',
+        'ToDoList': 'url5'
+        #'Document': 'url6'
     }
     return render_template('index.html', skills = myPortfolio)
 
