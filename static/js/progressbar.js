@@ -14,7 +14,7 @@
          options = $.extend({
             percentage: null,
             ShowProgressCount: true,
-            duration: 1000,
+            duration: 2500,
 
             // Styling Options
             fillBackgroundColor: '#3498db',
@@ -94,24 +94,24 @@
 
 $('#progressbar1').LineProgressbar({
 	percentage: 85,
-    fillBackgroundColor: '#fcff0c',
+    fillBackgroundColor: '#0094ff',
     height: '15px'
 });
 
 $('#progressbar2').LineProgressbar({
 	percentage: 90,
-    fillBackgroundColor: '#fcff0c',
+    fillBackgroundColor: '#0094ff',
     height: '15px'
 });
 
 $('#progressbar3').LineProgressbar({
 	percentage: 90,
-    fillBackgroundColor: '#fcff0c',
+    fillBackgroundColor: '#0094ff',
     height: '15px'
 });
 
 $('#progressbar4').LineProgressbar({
 	percentage: 65,
-    fillBackgroundColor: '#fcff0c',
+    fillBackgroundColor: '#0094ff',
     height: '15px'
 });
