@@ -40,6 +40,8 @@ function documentWidth() {
     if(window < 500){
         $( "a" ).removeClass( "hvr-float-shadow" );
     } else if (window > 500) {
-        $( "a" ).not('.test').addClass( "hvr-float-shadow" );
+        $( "a" ).not('.social-media, .the-foot').addClass( "hvr-float-shadow" ) ;
+
+
     }
 }

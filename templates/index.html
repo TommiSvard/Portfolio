@@ -18,39 +18,28 @@
 </head>
 <body>
 
-<div class="container-fluid">
-    <div class="row">
 
-        <div class="col-12">{% include 'header.html' %}</div>
-    </div>
+{% include 'header.html' %}
 
-    <div class="row">
-  <div class="col-sm-12">{% include 'about_me.html' %}</div>
-    </div>
 
-<div class="row">
-  <div class="col-12">{% include 'skills.html' %}</div>
-    </div>
 
-    <div class="row">
-        <div class="col-12">{% include 'portfolio.html' %}</div>
-    </div>
+{% include 'about_me.html' %}
 
-    <div class="row">
-        <div class="col-12">{% include 'footer.html' %}</div>
-    </div>
 
-</div>
+
+{% include 'skills.html' %}
+
+
+
+{% include 'portfolio.html' %}
+
+
+
+{% include 'footer.html' %}
 
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
 <script src="{{ url_for('static', filename='js/progressbar.js') }}"></script>
 </body>
 </html>
