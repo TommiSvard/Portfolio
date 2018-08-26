@@ -6,37 +6,13 @@
 
 
 header {
-    height: 500px;
+    height: 480px;
     background: url("../img/header2.jpg") center;
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: 1px 8px 20px;
-}
-
-/*
-label {
-    color: white;
-    font-size: 26px;
-    margin: 0 0 0 5%;
-    border: 1px solid black;
-    padding: 3px;
-    background-color: black;
-    position: fixed;
-    display: none;
-    z-index: 1;
-}
-*/
-@media screen and (max-width: 549px) {
-  label {
-    display: block;
-      cursor: pointer;
-  }
-
- label:hover{
-     color: #fcff0c;
- }
 
 }
+
 
 h1 {
    text-align: center;
@@ -52,7 +28,7 @@ span {
     display: inline-block;
     padding: 0.2em 0.5em;
     border: white solid 10px;
-    margin-top: 80px;
+    margin-top: 110px;
 }
 
 .lead {
@@ -71,7 +47,7 @@ h3 {
 
 #about {
     text-align: center;
-    padding-top: 5%;
+    padding-top: 10%;
 }
 
 #about_me {
@@ -82,34 +58,91 @@ h3 {
     font-weight: 300;
 }
 
-nav {
-    background-color: black;
+
+.navi-bar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
     height: 40px;
+    line-height: 40px;
+    background-color: black;
+    text-align: left;
 }
 
-nav a {
-    display: inline-block;
+
+.menu {
+    margin: 0 0 0 30px;
+}
+
+.menu a {
+    text-decoration: none;
     color: white;
-    margin: 8px 0 0 50px;
-    font-weight: 700;
-    font-size: 16px;
-    text-transform: uppercase;
-    padding: 4px 10px 0 5px;
+    margin: 0 10px;
+    line-height: 40px;
+
 }
 
-@media screen and (max-width: 550px) {
+.menu a:hover {
+    text-decoration: none;
+    color: #0094ff;
+}
 
+label {
+    margin: 0 0 0 40px;
+    font-size: 26px;
+    line-height: 40px;
+    display: none;
+    color: white;
+}
 
-  nav a {
-      display: none;
+#toggle {
+    display: none;
+}
+
+.test {
+    float: right;
+
+}
+.menu .test  {
+    margin: 0 40px 0 0;
+}
+@media only screen and (max-width: 500px) {
+label {
+    display: block;
+    cursor: pointer;
   }
 
+.menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+    margin: 0;
+}
+.test {
+   text-align: center;
+    width: 100%;
+    display: none;
+    margin: 0;
 }
 
-nav a:hover {
-    text-decoration: none;
-    color: #fcff0c;
+.menu a {
+    display: block;
+    margin: 0;
+    background: black;
+    }
+
+.menu .test {
+    margin: 0;
 }
+#toggle:checked + .menu{
+    display: block;
+
+    }
+
+}
+
+
 
 .hvr-float-shadow {
   display: inline-block;
@@ -209,7 +242,7 @@ text-align: center;
 }
 
 .alt-section {
-background-color: ghostwhite;
+background-color: #f5f2f1;
 }
 
 .thumbnails-portfolio {
