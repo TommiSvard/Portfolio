@@ -6,7 +6,7 @@
 <div class="thumb-wrap">
 <div class="thumbnails-portfolio">
 {% for item,val in skills.items() %}
-    <div class="thumbnail-unit" style="background-image: url(../static/img/thumbnails/{{ item }}.jpg);">
+    <div class="thumbnail-unit" data-target="{{ val }}" style="background-image: url(../static/img/images/{{ item }}.jpg);">
         <div class="thumbnail-overlay">
             <strong class="thumb-desc">{{ item }}</strong>
         </div>
@@ -17,38 +17,10 @@
 
 <div class="work-wrap">
 <div class="work-container">
-<div class="work-return"><i class="fas fa-chevron-circle-left"></i></div><h4>Mitt arbete</h4>
+<div class="work-return"><i class="fas fa-chevron-circle-left"></i></div>
+<h4 class="work-title">Mitt arbete</h4>
 
-    <div style="width: 600px; height: 500px; background: #ccc;"></div>
-    <p>
-        Normally, both your asses would be dead as fucking fried chicken, but you happen
-        to pull this shit while I'm in a transitional period so I don't wanna kill you,
-        I wanna help you. But I can't give you this case, it don't belong to me. Besides,
-
-    </p>
-
-    <div style="width: 600px; height: 500px; background: #ccc;"></div>
-    <p>
-        Normally, both your asses would be dead as fucking fried chicken, but you happen
-        to pull this shit while I'm in a transitional period so I don't wanna kill you,
-        I wanna help you. But I can't give you this case, it don't belong to me. Besides,
-
-    </p>
-
-    <div style="width: 600px; height: 500px; background: #ccc;"></div>
-    <p>
-        Normally, both your asses would be dead as fucking fried chicken, but you happen
-        to pull this shit while I'm in a transitional period so I don't wanna kill you,
-        I wanna help you. But I can't give you this case, it don't belong to me. Besides,
-
-    </p>
-
-    <div style="width: 600px; height: 500px; background: #ccc;"></div>
-    <p>
-        Normally, both your asses would be dead as fucking fried chicken, but you happen
-        to pull this shit while I'm in a transitional period so I don't wanna kill you,
-        I wanna help you. But I can't give you this case, it don't belong to me. Besides,
-    </p>
+<div class="work-load"></div>
 </div>
 </div>
 

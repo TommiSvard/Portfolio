@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Circles & Sound</title>
+	<script type="text/javascript" src="static/js/circle_sound/paperjs-v0.11.4/dist/paper-full.js"></script>
+	<link rel="stylesheet" type="text/css" href="static/css/circles.css">
+</head>
+<script type="text/paperscript" canvas="myCanvas">
+
+
+for(var x = 10; x < 1000; x+=100){
+	for (var y = 10; y < 1000; y+=100){
+	var circle2 = new Path.Circle(new Point(x, y), 7);
+	circle2.fillColor = "black";
+	}
+};
+
+
+
+</script>
+<body>
+	
+<canvas id="myCanvas" resize></canvas>
+</body>
+</html>

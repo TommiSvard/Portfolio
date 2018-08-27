@@ -2,6 +2,7 @@ $(function(){
 smoothScrolling(1000);
 workArea();
 documentWidth();
+workLoad();
 $(window).resize(documentWidth);
 
 });
@@ -44,4 +45,19 @@ function documentWidth() {
 
 
     }
+}
+
+function workLoad() {
+ $.ajaxSetup({ cache: true });
+ $('thumbnail-unit').click(function() {
+     var $this = $(this),
+         newTitle = $this.find('strong').text(),
+         newfolder = $this.data('target'),
+         spinner = "",
+         newHTML = '/static/work_sections/'+newfolder+'/work.html';
+     $('.work-load').load(newHTML)
+     $('.work-title').text(newTitle)
+
+     }
+ )
 }
