@@ -43,21 +43,23 @@ function documentWidth() {
     } else if (window > 500) {
         $( "a" ).not('.social-media, .the-foot').addClass( "hvr-float-shadow" ) ;
 
-
     }
 }
 
-function workLoad() {
- $.ajaxSetup({ cache: true });
- $('thumbnail-unit').click(function() {
-     var $this = $(this),
-         newTitle = $this.find('strong').text(),
-         newfolder = $this.data('target'),
-         spinner = "",
-         newHTML = '/static/work_sections/'+newfolder+'/work.html';
-     $('.work-load').load(newHTML)
-     $('.work-title').text(newTitle)
 
-     }
- )
+function workLoad() {
+$.ajaxSetup({cache : false});
+
+ $('.thumbnail-unit').click(function() {
+
+
+         var $this = $(this),
+             spinner = '<div class="loader">Loading...</div>',
+             newTitle = $this.find('strong').text(),
+             newData = $this.data('url');
+
+     $('.work-load').html(spinner).load('/work/'+ newData);
+     $('.work-title').text(newTitle);
+
+     });
 }

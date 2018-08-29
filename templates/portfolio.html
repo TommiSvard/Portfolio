@@ -6,7 +6,7 @@
 <div class="thumb-wrap">
 <div class="thumbnails-portfolio">
 {% for item,val in skills.items() %}
-    <div class="thumbnail-unit" data-target="{{ val }}" style="background-image: url(../static/img/images/{{ item }}.jpg);">
+    <div class="thumbnail-unit" data-url="{{ val }}" style="background-image: url(../static/img/images/{{ item }}.jpg);">
         <div class="thumbnail-overlay">
             <strong class="thumb-desc">{{ item }}</strong>
         </div>
@@ -14,13 +14,13 @@
 {% endfor %}
 </div>
 </div>
-
 <div class="work-wrap">
 <div class="work-container">
+
 <div class="work-return"><i class="fas fa-chevron-circle-left"></i></div>
 <h4 class="work-title">Mitt arbete</h4>
-
 <div class="work-load"></div>
+
 </div>
 </div>
 
