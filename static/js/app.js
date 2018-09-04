@@ -52,7 +52,6 @@ $.ajaxSetup({cache : false});
 
  $('.thumbnail-unit').click(function() {
 
-
          var $this = $(this),
              spinner = '<div class="loader">Loading...</div>',
              newTitle = $this.find('strong').text(),

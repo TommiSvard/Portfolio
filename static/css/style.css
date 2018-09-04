@@ -4,15 +4,12 @@
     overflow: hidden !important;
 }
 
-
 header {
     height: 480px;
     background: url("../img/header2.jpg") center;
     background-size: cover;
     width: auto;
-
 }
-
 
 h1 {
    text-align: center;
@@ -38,7 +35,6 @@ span {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: white;
-
 }
 
 h3 {
@@ -57,7 +53,6 @@ h3 {
     margin: 45px auto;
     font-weight: 300;
 }
-
 
 .navi-bar {
     position: fixed;
@@ -177,8 +172,7 @@ label {
 footer {
     background: url("../img/header2.jpg") center center;
     background-size: auto;
-    background-position: 45%;
-
+    background-position: 55%;
 }
 
 .foot {
@@ -207,7 +201,6 @@ footer {
 text-align: center;
     padding-top: 10%;
     padding-bottom: 5%;
-
 }
 
 .left-progress {
@@ -215,7 +208,6 @@ text-align: center;
     margin: 0 auto;
     overflow: auto;
     position: relative;
-
 }
 
 .right-progress {
@@ -224,7 +216,6 @@ text-align: center;
    overflow: auto;
    position: relative;
     padding-bottom: 10%;
-
 }
 
 @media screen and (max-width: 860px) {
@@ -237,7 +228,6 @@ text-align: center;
     width: 75%;
     }
 }
-
 
 #portfolio {
     text-align: center;
@@ -272,13 +262,12 @@ background: rgba(104,115,120,.1);
 .thumbnail-overlay {
     position: absolute;
     top: 100%;
-    right: 0%;
-    bottom: 0%;
-    left: 0%;
+    right: 0;
+    bottom: 0;
+    left: 0;
     height: 100%;
     background-color: rgb(255,255,255);
     transition: 0.5s;
-
 }
 
 .thumb-desc{
@@ -292,7 +281,7 @@ background: rgba(104,115,120,.1);
 
 .thumbnail-unit:hover .thumbnail-overlay {
     position: absolute;
-    top: 0%;
+    top: 0;
 
 }
 
@@ -303,13 +292,11 @@ background: rgba(104,115,120,.1);
     }
 }
 
-
 .work-area{
     width: 200%;
     position: relative;
-    left: 0%;
+    left: 0;
     transition: 0.8s;
-
 }
 
 .section-work {
@@ -321,7 +308,6 @@ background: rgba(104,115,120,.1);
     float: left;
 }
 .work-return {
-
     left: -60px;
     display: inline-block;
     color: black;
@@ -329,9 +315,7 @@ background: rgba(104,115,120,.1);
     font-size: 24px;
     cursor: pointer;
 
-
 }
-
 
 h4 {
     display: inline-block;
@@ -340,26 +324,41 @@ h4 {
     font-weight: 300;
     font-size: 24px;
 
-
 }
+
 .work-container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     display: none;
 }
 
 .work-img {
-
     width: 800px;
-    height: 700px;
     object-fit: contain;
-
-
-
 }
 
-@media (max-width: 500px) {
+.citation {
+    position: absolute;
+    top: 400px;
+    font-family: "Engravers MT";
+    font-size: 172px;
+    color: #3498db;
+    opacity: 0.4;
+    z-index: -1;
+}
+.work-text {
+    padding: 40px 0 50px 5%;
+    line-height: 2em;
+}
+.site-link {
+    color: #3498db;
+}
 
+.site-link:hover {
+    text-decoration: none;
+    opacity: 0.4;
+}
+@media (max-width: 500px) {
     .fa-chevron-circle-left {
         margin-left: 15px;
     }
@@ -379,7 +378,7 @@ h4 {
   height: 4em;
 }
 .loader {
-  color: #ffffff;
+  color: #3498db;
   text-indent: -9999em;
   margin: 88px auto;
   position: relative;

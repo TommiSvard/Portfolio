@@ -1,5 +1,4 @@
 from flask import Flask, render_template
-from flask_cors import CORS
 from flask_static_files_chache_invalidator import *
 
 
@@ -22,14 +21,13 @@ def index():
 
 
 @app.route('/<int:site>')
-def work(site=0):
+def work(site):
     work = {'work/circles_sound/circles_sound.html':1,'work/image_gallery/image_gallery.html':2,'work/PurrfectMatch/purrfect_match.html':3,'work/colorgame/colorgame.html':4,'work/ToDoListProject/todo_list.html':5}
 
     for item,value in work.items():
         if site == value:
             return render_template(item)
-        else:
-            return render_template('404.html')
+
 
 
 @app.route('/work/<int:id>', methods=['GET'])
