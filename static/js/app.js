@@ -4,7 +4,7 @@ workArea();
 documentWidth();
 workLoad();
 $(window).resize(documentWidth);
-
+scrollHide();
 });
 
 var $window = $(window);
@@ -41,7 +41,7 @@ function documentWidth() {
     if(window < 500){
         $( "a" ).removeClass( "hvr-float-shadow" );
     } else if (window > 500) {
-        $( "a" ).not('.social-media, .the-foot').addClass( "hvr-float-shadow" ) ;
+        $( "a" ).not('.social-media, .the-foot .site-link' ).addClass( "hvr-float-shadow" ) ;
 
     }
 }
@@ -61,4 +61,19 @@ $.ajaxSetup({cache : false});
      $('.work-title').text(newTitle);
 
      });
+
 }
+
+function scrollHide() {
+var prev = 0;
+var nav = $('.navi-bar');
+
+$window.on('scroll', function(){
+  var scrollTop = $window.scrollTop();
+
+  nav.toggleClass('hidden', scrollTop > prev);
+  prev = scrollTop;
+
+});
+}
+
