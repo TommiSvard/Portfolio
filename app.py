@@ -27,7 +27,8 @@ def work(site):
     for item,value in work.items():
         if site == value:
             return render_template(item)
-
+        else:
+            return render_template("404.html")
 
 
 @app.route('/work/<int:id>', methods=['GET'])
@@ -37,6 +38,12 @@ def work_load(id=0):
     for work,key in portfolio.items():
         if id == key:
             return render_template(work)
+
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
 
 
 @app.context_processor
